@@ -12,7 +12,3 @@ resource "aws_s3_bucket" "primary_domain" {
     error_document = "error.html"
   }
 }
-
-locals {
-  s3_origin_id = "S3-${var.primary_domain}"
-}
